@@ -80,7 +80,7 @@ class QuestionarioRestView(View):
 
                     for a in associativas:
                         if data.get(f'associativa-{item.id}-{a.id}'):
-                            novaResposta.valor += f'{opcoes[int(data.get(f'associativa-{item.id}-{a.id}'))-1].id}:{a.id}'
+                            novaResposta.valor += f'{opcoes[int(data.get(f"associativa-{item.id}-{a.id}"))-1].id}:{a.id}'
                             # print(f'Resposta: {novaResposta.valor}')
 
                             if int(data.get(f'associativa-{item.id}-{a.id}')) > 1:
