@@ -95,5 +95,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "../static-global"),
 ]
 
+X_FRAME_OPTIONS = 'ALLOW-FROM http://megaforms.freitascodes.me/'
 
+XS_SHARING_ALLOWED_METHODS = ['POST','GET','OPTIONS', 'PUT', 'DELETE']
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
